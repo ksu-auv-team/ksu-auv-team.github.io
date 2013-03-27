@@ -1,4 +1,0 @@
-#!/bin/bash
-
-
-(cd /root/OrgsyncWebsite/auvt-website && /root/OrgsyncWebsite/auvt-website/./download && /root/OrgsyncWebsite/auvt-website/./upload "Nightly Upload")
