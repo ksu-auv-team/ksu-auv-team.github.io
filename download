@@ -1,0 +1,10 @@
+#!/bin/bash
+wget -Nq -P /root/OrgsyncWebsite/auvt-website http://s3.amazonaws.com/os_extranet_files_test/20719_44812_download2.exe
+wget -Nq -P /root/OrgsyncWebsite/auvt-website http://s3.amazonaws.com/os_extranet_files_test/20719_40787_stylesheet.css
+mv "20719_44812_download2.exe" download2
+
+while read line
+do
+	wget -Nq -P /root/OrgsyncWebsite/auvt-website "http://spsu.orgsync.com/org/auv/$line"
+done < "download2"
+
