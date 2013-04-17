@@ -2,7 +2,8 @@ spsu-auv-team.github.com
 ========================
 This repository is our website.
 
-**DO NOT** rename or delete this repository
+**DO NOT** rename or delete this repository 
+
 **DO NOT** create a repository named `spsu-auv-team.github.io` it will override this one.
 
 Editing webpages
