@@ -20,8 +20,8 @@ Editing webpages
 File Naming Standards
 ---------------------
 _NOTE: these rules differ from the AUV standard_
-* *NO* underscores, spaces, or camel-casing
- * Exception: Files standard users do not go to directly (Ex. css files)
+* *NO* underscores, spaces, dashes, or camel-casing
+ * Exception: Files standard users do not go to directly (Ex. css files) may have underscores
 * All files need to have an extension
  * Exception: CNAME
 * No word condensing
