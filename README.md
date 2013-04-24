@@ -27,3 +27,5 @@ _NOTE: these rules differ from the AUV standard_
 * No word condensing
 * Profile pages must be named with the member's first initial followed by their last name
 * All filenames must be lowercase
+
+test
