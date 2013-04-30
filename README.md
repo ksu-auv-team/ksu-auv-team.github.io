@@ -21,9 +21,32 @@ File Naming Standards
 ---------------------
 _NOTE: these rules differ from the AUV standard_
 * *NO* underscores, spaces, dashes, or camel-casing
- * Exception: Files standard users do not go to directly (Ex. css files) may have underscores
+ * Exception: Files standard users do not go to directly (Ex. css files, posts) may have underscores or dashes
 * All files need to have an extension
  * Exception: CNAME
 * No word condensing
 * Profile pages must be named with the member's first initial followed by their last name
 * All filenames must be lowercase
+
+Making a Post
+-------------
+1. Create an `.md` file with the following format `yyyy-mm-dd-post-short-name.md`
+  * for example a post created on Apr 30, 2013 named _New Testing Equipment_ can be named `2013-04-30-new-equipment.md`
+  * use dashes for word spacing, must be all lowercase
+2. Paste the following in to the top of the `.md` file :
+```ruby
+---
+layout: post
+title: "New Website is Up and Running"
+description: 
+category: 
+tags: []
+image:
+---
+{% include JB/setup %}
+```
+
+3. foo
+
+
+
