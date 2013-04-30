@@ -1,0 +1,16 @@
+---
+layout: page
+title: Latest News
+---
+{% include JB/setup %}
+
+<table >
+{% for post in site.posts %}
+ <tr><td><h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3></td></tr>
+ {% if post.image %}
+ <tr><td><img src="{{ BASE_PATH }}/images/{{ post.image }}"></td></tr>
+ {% endif %}
+ <tr><td>{{ post.content | strip_html | truncatewords: 101, '...'}} <small><a href="{{ BASE_PATH }}{{ post.url }}">Read Full Article</a></small></td></tr>
+ <tr><td><hr></td></tr>
+{% endfor %}
+</table>
