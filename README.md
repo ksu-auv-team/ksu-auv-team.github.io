@@ -30,23 +30,36 @@ _NOTE: these rules differ from the AUV standard_
 
 Making a Post
 -------------
-1. Create an `.md` file with the following format `yyyy-mm-dd-post-short-name.md`
+* Create an `.md` file with the following format `yyyy-mm-dd-post-short-name.md`
   * for example a post created on Apr 30, 2013 named _New Testing Equipment_ can be named `2013-04-30-new-equipment.md`
   * use dashes for word spacing, must be all lowercase
-2. Paste the following in to the top of the `.md` file :
+* Paste then fill out the following in to the top of the `.md` file :
+
 ```ruby
 ---
 layout: post
-title: "New Website is Up and Running"
+title: 
 description: 
 category: 
 tags: []
 image:
+author: 
+---
+{% include JB/setup %}
+```
+Using the example from above:
+```ruby
+---
+layout: post
+title: "New Testing Equipment"
+description: "Today we made our new testing equipment"
+category: Structure
+tags:["testing", "progress"]
+image: tequip.png
+author: tmartin357
 ---
 {% include JB/setup %}
 ```
 
-3. foo
-
-
-
+* There can be one image per post; copy your image in to the `/images/` directory.
+  * Image is optional
