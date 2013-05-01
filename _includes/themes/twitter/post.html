@@ -4,14 +4,14 @@
 
 <div class="row-fluid post-full">
   <div class="span12">
-    <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
-    </div>
     <div class="content">
+    <table>
       {% if page.image %}
         <tr><td><img src="{{ BASE_PATH }}/images/{{ page.image }}"></td></tr>
       {% endif %}
-      {{ content }}
+      <tr><td>{{ content }}</td></tr>
+      <tr><td>{{ page.author }} - {{ page.date | date_to_long_string }}</td></tr>
+    </table>
     </div>
 
   {% unless page.categories == empty %}
