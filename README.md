@@ -63,3 +63,5 @@ author: tmartin357
 
 * There can be one image per post; copy your image in to the `/images/` directory.
   * Image is optional
+* The body of your post is below the copied stuff
+  * It is parsed in markdown
