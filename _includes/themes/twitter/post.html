@@ -10,7 +10,7 @@
         <tr><td><img src="{{ BASE_PATH }}/images/{{ page.image }}"></td></tr>
       {% endif %}
       <tr><td>{{ content }}</td></tr>
-      <tr><td>{{ page.author }} - {{ page.date | date_to_long_string }}</td></tr>
+      <tr><td><small>{{ page.author }} - {{ page.date | date_to_long_string }}</small></td></tr>
     </table>
     </div>
 
