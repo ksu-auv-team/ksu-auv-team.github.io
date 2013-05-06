@@ -6,17 +6,6 @@ This repository is our website.
 
 **DO NOT** create a repository named `spsu-auv-team.github.io` it will override this one.
 
-Editing webpages
-----------------
-0. Understand compile script
-1. Edit webpages that are in the prebuild folder
-2. run the compile script
-3. Move files from the build directory to the top directory
-4. **DO NOT** edit files in the top directory. Exceptions:
-   * any *.css file
-   * CNAME
-   * README.md
-
 File Naming Standards
 ---------------------
 _NOTE: these rules differ from the AUV standard_
