@@ -3,7 +3,7 @@ layout: post
 title: "Progress Update"
 description: "Today we had a good open lab"
 category: Structure
-tags:["open", "lab", "progress"]
+tags: ["open", "lab", "progress"]
 image: 
 author: Stedwell
 ---
