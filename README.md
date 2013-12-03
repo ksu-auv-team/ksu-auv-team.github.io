@@ -50,7 +50,35 @@ author: tmartin357
 {% include JB/setup %}
 ```
 
-* There can be one image per post; copy your image in to the `/images/` directory.
-  * Image is optional
+* There can be one main image per post; copy your image in to the `/images/` directory.
+  * Main Image is optional
 * The body of your post is below the copied stuff
   * It is parsed in markdown
+
+Adding a Gallery to your post
+-----------------------------
+* Create a directory for your gallery in the `/galleries/` directory
+* Create thumbnails
+
+```bash
+for i in $(ls *.jpg); do convert -scale 100 $i thumbs/$i; done
+```
+* Add your gallery to the post using the following as an example
+
+```html
+<div id="links">
+    <a href="{{ BASE_PATH }}/galleries/MakerFaire/1.jpg" title="Joe">
+        <img src="{{ BASE_PATH }}/galleries/MakerFaire/thumbs/1.jpg" alt="Joe">
+    </a>
+    <a href="{{ BASE_PATH }}/galleries/MakerFaire/2.jpg" title="People">
+        <img src="{{ BASE_PATH }}/galleries/MakerFaire/thumbs/2.jpg" alt="People">
+    </a>
+    <a href="{{ BASE_PATH }}/galleries/MakerFaire/3.jpg" title="More People">
+        <img src="{{ BASE_PATH }}/galleries/MakerFaire/thumbs/3.jpg" alt="More People">
+    </a>
+    <a href="{{ BASE_PATH }}/galleries/MakerFaire/4.jpg" title="Less People, More Stuff">
+        <img src="{{ BASE_PATH }}/galleries/MakerFaire/thumbs/4.jpg" alt="Less People, More Stuff">
+    </a>
+</div>
+```
+
