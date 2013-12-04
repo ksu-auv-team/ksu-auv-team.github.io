@@ -1,0 +1,89 @@
+<HTML>
+	<HEAD>
+		<script>
+			function genpost()
+			{
+				var d = new Date();
+				var find = ' ';
+				var re = new RegExp(find, 'g');
+				document.getElementById('fname').value = d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate()+"-"+document.getElementById('ptitle').value.replace(re,'-')+".md";
+				
+				//title
+				document.getElementById('fbody').value = "---\nlayout: post\ntitle: \"" + document.getElementById('ptitle').value + "\"\n";
+				
+				//Description
+				document.getElementById('fbody').value += "description: \"" + document.getElementById('pdesc').value + "\"\n";
+				
+				//category
+				var radios = document.getElementsByName('cat');
+				var cat = ""
+				for (var i = 0, length = radios.length; i < length; i++) {
+					if (radios[i].checked) {
+						cat = radios[i].value;
+						break;
+					}
+				}
+				document.getElementById('fbody').value += "category: " + cat + "\n";
+				
+				//tags
+				document.getElementById('fbody').value += "tags: [" + document.getElementById('ptags').value + "]\n";
+				
+				//image
+				document.getElementById('fbody').value += "image: " + document.getElementById('pimg').value + "\n";
+				
+				//Author
+				document.getElementById('fbody').value += "author: " + document.getElementById('pname').value + "\n";
+				
+				//Other
+				document.getElementById('fbody').value += "---\n{% include JB/setup %}\n\n" + document.getElementById('pbody').value;
+			}
+		</script>
+		<style> 
+			div
+			{
+			 float:left;
+			}
+			
+			
+		</style>
+	</HEAD>
+	<BODY>
+		<div style="border:2px solid #006633;background:#339933;width:95%;">
+			<div style="position: relative;"> 
+				<div style="float:left;">
+					<table>
+						<tr><td>Title</td><td><input type="text" id="ptitle"></td></tr>
+						<tr><td>Description</td><td><input type="text" id="pdesc"></td></tr>
+						<tr><td>Tags</td><td><input type="text" id="ptags"></td></tr>
+						<tr><td>Image</td><td><input type="text" id="pimg"></td></tr>
+						<tr><td>First Last Name</td><td><input type="text" id="pname"></td></tr>
+					</table>
+				</div>
+				<div style="float:left;">
+					<input type="radio" name="cat" value="General">General</br>
+					<input type="radio" name="cat" value="Software">Software</br>
+					<input type="radio" name="cat" value="Structures">Structures</br>
+					<input type="radio" name="cat" value="Electrical">Electrical</br>
+				</div>
+				<div style="padding-left:20px">
+					<b>Instructions:</b></br>
+					There is no error-checking here.</br>
+					Tags should be like this:</br>
+					<input type="text" readonly value="&quot;one&quot;, &quot;two&quot;, &quot;etc&quot;"></br>
+					Image is optional.</br>
+					<b>You will have to upload the post (and image) yourself</b>
+				</div>
+				<div style="position:absolute;bottom:0;right:0;">
+					<button onclick="genpost()">Generate</button>
+				</div>
+			</div>
+			<div>
+				Post Contents: </br><textarea rows="15" cols="100" id="pbody" wrap="hard"></textarea></br>
+			</div>
+		</div>
+		<div style="border:2px solid #CC0033;background:#CC6666;width:95%;">
+			<b>Filename: </b><input type="text" id="fname" readonly></br>
+			<b>File Contents: </b></br><textarea rows="20" cols="100" id="fbody" readonly wrap="hard"></textarea>
+		</div>
+	</BODY>
+</HTML>
