@@ -12,7 +12,7 @@ majorlong: "Bachelor of Science in Computer Science"
 joindate: "Spring of 2012"
 studentdate: "Fall of 2009"
 male: "yes"
-memimage: True
+memimage: "True"
 ---
 {% include JB/setup %}
 Taylor is the current Software Team Leader, Lab Master, and Web Master. He joined the team in the Spring semester of 2012. He has taken an interest in Software Engineering and is currently managaging software documentation.
