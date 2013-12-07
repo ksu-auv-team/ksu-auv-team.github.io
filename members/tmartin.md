@@ -4,6 +4,8 @@ fname: "Taylor"
 lname: "Martin"
 title: Taylor Martin
 positions: ["Vice President", "Webmaster", "Software Engineer", "Software Developer"]
+directstuff: ["Swim Computer", "Robot Computer Setup", "Website Design", "Website Content"]
+indirstuff: ["Atlanta Mini MakerFaire 2012", "Atlanta Mini MakerFaire 2013"]
 graddate: "Fall semester of 2014"
 majorshort: "Computer Science"
 majorlong: "Bachelor of Science in Computer Science"
