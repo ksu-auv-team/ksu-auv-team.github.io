@@ -3,8 +3,8 @@ layout: memberprof
 fname: "Taylor"
 lname: "Martin"
 title: Taylor Martin
-positions: ["Vice President", "Webmaster", "Software Engineer", "Software Developer"]
-directstuff: ["Swim Computer", "Robot Computer Setup", "Website Design", "Website Content"]
+positions: ["First Mate", "Webmaster", "Software Engineer", "Software Developer"]
+directstuff: ["Robot Computer Setup", "Swim Computer Node", "Website Design", "Website Content"]
 indirstuff: ["Atlanta Mini MakerFaire 2012", "Atlanta Mini MakerFaire 2013"]
 graddate: "Fall semester of 2014"
 majorshort: "Computer Science"
