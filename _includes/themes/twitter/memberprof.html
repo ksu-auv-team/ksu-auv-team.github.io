@@ -45,6 +45,7 @@
 														{{ content }}
 													</td>
 												</tr>
+												{% if page.positions %}
 												<tr>
 													<td class="large" width="95%">
 														<br>
@@ -59,6 +60,34 @@
 														</ul>
 													</td>
 												</tr>
+												{% endif %}
+												{% if page.directstuff %}
+												<tr>
+													<td class="large" width="95%">
+														<br>
+														<span style="font-size:14px;"><strong>Team Works Contributed To</strong></span></td>
+												</tr>
+												<tr>
+													<td colspan="2" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;" valign="top">
+														<div>
+															<div style="float:left">
+																<ul>
+																	{% for item in page.directstuff %}
+																		<li>{{ item }} </li>
+																	{% endfor %}
+																</ul>
+															</div>
+															<div style="float:right">
+																<ul>
+																	{% for item in page.indirstuff %}
+																		<li>{{ item }} </li>
+																	{% endfor %}
+																</ul>
+															</div>
+														</div>
+													</td>
+												</tr>
+												{% endif %}
 											</tbody>
 										</table>
 									</td>
