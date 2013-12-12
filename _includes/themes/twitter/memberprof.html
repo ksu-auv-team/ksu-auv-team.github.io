@@ -17,87 +17,72 @@
 				</tr>
 			</tbody>
 		</table>
-		<table cellpadding="0" cellspacing="0" class="pod-body" width="100%">
-			<tbody>
-				<tr>
-					<td class="pod-body-left">
-						&nbsp;</td>
-					<td class="pod-body">
-						<table width="100%">
-							<tbody>
-								<tr>
-									<td align="center" style="border-right:1px solid #ccc;padding: 0 15px 0 0;" valign="top" width="35%">
-										<img alt="" display_no_pic_message="false" id="" src="{% if page.memimage %}/images/{{ page.fname }}{{ page.lname }}.png{% else %}/images/profile_blank.gif{% endif %}" style="width:155px;">
-										<div>
-											<br>
-											<a href="resumes/{{ page.fname }}_{{ page.lname }}_Resume.pdf" target="_blank"> {{ page.fname }}'s Resume</a></div>
-									</td>
-									<td valign="top">
-										<table border="0" cellpadding="0" cellspacing="0" width="100%">
-											<tbody>
-												<tr>
-													<td class="large" width="95%">
-														<span style="font-size:14px;"><strong>About {{ page.fname }}</strong></span></td>
-												</tr>
-												<tr>
-													<td colspan="2" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;" valign="top">
-														
-														{{ content }}
-													</td>
-												</tr>
-												{% if page.positions %}
-												<tr>
-													<td class="large" width="95%">
-														<br>
-														<span style="font-size:14px;"><strong>Roles</strong></span></td>
-												</tr>
-												<tr>
-													<td colspan="2" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;" valign="top">
-														<ul>
-															{% for item in page.positions %}
-																<li>{{ item }} </li>
-															{% endfor %}
-														</ul>
-													</td>
-												</tr>
-												{% endif %}
-												{% if page.directstuff %}
-												<tr>
-													<td class="large" width="95%">
-														<br>
-														<span style="font-size:14px;"><strong>Team Works Contributed To</strong></span></td>
-												</tr>
-												<tr>
-													<td colspan="2" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;" valign="top">
-														<div>
-															<div style="float:left">
-																<ul>
-																	{% for item in page.directstuff %}
-																		<li>{{ item }} </li>
-																	{% endfor %}
-																</ul>
-															</div>
-															<div style="float:right">
-																<ul>
-																	{% for item in page.indirstuff %}
-																		<li>{{ item }} </li>
-																	{% endfor %}
-																</ul>
-															</div>
-														</div>
-													</td>
-												</tr>
-												{% endif %}
-											</tbody>
-										</table>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</td>
-					<td class="pod-body-right">
-						&nbsp;</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="prof-body" style="">
+			<div class="img-col">
+				<img alt="" display_no_pic_message="false" id="" src="{% if page.memimage %}/images/{{ page.fname }}{{ page.lname }}.png{% else %}/images/profile_blank.gif{% endif %}" style="width:100%; max-width:155px;">
+				<div>
+					<br>
+					<a href="resumes/{{ page.fname }}_{{ page.lname }}_Resume.pdf" target="_blank"> {{ page.fname }}'s Resume</a>
+				</div>
+			</div>
+			<div class="text-col">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody>
+						<tr>
+							<td class="large" width="95%">
+								<span style="font-size:14px;"><strong>About {{ page.fname }}</strong></span></td>
+						</tr>
+						<tr>
+							<td colspan="2" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;" valign="top">
+								
+								{{ content }}
+							</td>
+						</tr>
+						{% if page.positions %}
+						<tr>
+							<td class="large" width="95%">
+								<br>
+								<span style="font-size:14px;"><strong>Roles</strong></span></td>
+						</tr>
+						<tr>
+							<td colspan="2" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;" valign="top">
+								<ul>
+									{% for item in page.positions %}
+										<li>{{ item }} </li>
+									{% endfor %}
+								</ul>
+							</td>
+						</tr>
+						{% endif %}
+						{% if page.directstuff %}
+						<tr>
+							<td class="large" width="95%">
+								<br>
+								<span style="font-size:14px;"><strong>Team Works Contributed To</strong></span></td>
+						</tr>
+						<tr>
+							<td colspan="2" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;" valign="top">
+								<div>
+									<div>
+										<ul>
+											{% for item in page.directstuff %}
+												<li>{{ item }} </li>
+											{% endfor %}
+										</ul>
+									</div>
+									<div>
+										<ul>
+											{% for item in page.indirstuff %}
+												<li>{{ item }} </li>
+											{% endfor %}
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+						{% endif %}
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</div>
