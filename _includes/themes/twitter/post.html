@@ -6,7 +6,7 @@
   <div class="span12">
     <div class="content">
       {% if page.image %}
-        <div class="postimage"><img src="{{ BASE_PATH }}/images/{{ page.image }}"></div>
+        <div class="postimage"><a href="{{ BASE_PATH }}/images/{{ page.image }}"><img src="{{ BASE_PATH }}/images/{{ page.image }}"></a></div>
       {% endif %}
       <div class="postcont">{{ content }}</div>
       <div class="postauth">{{ page.author }} - {{ page.date | date_to_long_string }}</div>
