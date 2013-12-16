@@ -1,0 +1,17 @@
+<div class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+</div>
+
+<div class="row-fluid">
+{% for post in site.posts %}
+{% if post.category == page.crew %}
+ <div class="prepost"><div class="posttitlepre"><h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3></div>
+ {% if post.image %}
+ <div class="postimgpre"><img src="{{ BASE_PATH }}/images/{{ post.image }}"></div>
+ {% endif %}
+ <div class="postpre">{{ post.content | strip_html | truncatewords: 101, '...'}} <small><a href="{{ BASE_PATH }}{{ post.url }}">Read Full Article</a></small></div>
+ <hr>
+ </div>
+{% endif %}
+{% endfor %}
+</div>

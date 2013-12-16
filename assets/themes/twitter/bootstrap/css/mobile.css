@@ -1,4 +1,4 @@
-/* Priority over desktop.css */
+/* FIRST */
 .img-col {
     text-align: center;
     padding-bottom: 10px;
@@ -20,4 +20,7 @@
 }
 .crewli {
     display: none;
+}
+.postimgpre {
+    padding-bottom: 10px;
 }
