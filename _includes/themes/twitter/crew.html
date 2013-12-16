@@ -4,7 +4,7 @@
 
 <div class="row-fluid">
 {% for post in site.posts %}
-{% if post.category == page.crew %}
+{% if post.category == page.crew or page.crew == "_HOME_" %}
  <div class="prepost"><div class="posttitlepre"><h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3></div>
  {% if post.image %}
  <div class="postimgpre"><img src="{{ BASE_PATH }}/images/{{ post.image }}"></div>
