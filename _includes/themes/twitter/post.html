@@ -5,13 +5,11 @@
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="content">
-    <table>
       {% if page.image %}
-        <tr><td><img src="{{ BASE_PATH }}/images/{{ page.image }}"></td></tr>
+        <div class="postimage"><img src="{{ BASE_PATH }}/images/{{ page.image }}"></div>
       {% endif %}
-      <tr><td>{{ content }}</td></tr>
-      <tr><td><small>{{ page.author }} - {{ page.date | date_to_long_string }}</small></td></tr>
-    </table>
+      <div class="postcont">{{ content }}</div>
+      <div class="postauth">{{ page.author }} - {{ page.date | date_to_long_string }}</div>
     </div>
 
   {% unless page.categories == empty %}

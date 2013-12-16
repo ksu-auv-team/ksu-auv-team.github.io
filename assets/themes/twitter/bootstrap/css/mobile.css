@@ -1,3 +1,4 @@
+/* Priority over desktop.css */
 .img-col {
     text-align: center;
     padding-bottom: 10px;
@@ -7,4 +8,13 @@
 .prof-body {
     overflow: hidden;
     padding: 6px;
+}
+.postcont {
+    padding-top: 10px;
+}
+.postauth {
+    font-size: x-small;
+}
+.postimage {
+    text-align:center;
 }
