@@ -13,3 +13,6 @@
     overflow: hidden;
     padding: 10px;
 }
+.crewli {
+    display: inherit;
+}
