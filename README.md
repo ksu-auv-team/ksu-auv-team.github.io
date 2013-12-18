@@ -58,6 +58,7 @@ author: tmartin357
 Adding a Gallery to your post
 -----------------------------
 * Create a directory for your gallery in the `/galleries/` directory
+* Create a `thumbs` directory in the directory you just created
 * Create thumbnails
 
 ```bash
