@@ -8,8 +8,17 @@ a:visited{
 color: #619080;
 }
 
+.posttitlepre a{
+color: #00573D;
+}
+
 /* Set Link Color on Mouse Over */
 a:hover {
 color: #008de7;
+text-decoration: underline;
+}
+
+.posttitlepre a:hover {
+color: #00573D;
 text-decoration: underline;
 }
