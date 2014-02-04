@@ -14,7 +14,8 @@
     overflow: hidden;
     padding: 10px;
 }
-.crewli {
+.sponclass{text-align:center;display: inline-table;}
+.crewli{
     display: inherit;
 }
 
