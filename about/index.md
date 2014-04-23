@@ -13,4 +13,4 @@ We must build an autonomous underwater vehicle for this competition. Our AUV mus
 
 Meetings
 --------
-General Meetings are held Fridays at 4:00pm at our lab in room O-106 in the Student Competition Building.
+General Meetings are held Fridays at 5:30pm at our lab in room O-106 in the Student Competition Building.
