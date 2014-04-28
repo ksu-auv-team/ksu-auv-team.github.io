@@ -1,6 +1,6 @@
 ---
 layout: memberprof
-fname: "Jopseph"
+fname: "Joseph"
 lname: "Burley"
 title: Joseph Burley
 positions: ["Electrical Team"]
