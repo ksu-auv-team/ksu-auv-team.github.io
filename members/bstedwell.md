@@ -4,6 +4,8 @@ fname: "Bennett"
 lname: "Stedwell"
 title: Bennett Stedwell
 positions: ["Team Captian", "Structure Researcher", "Software Developer"]
+directstuff: []
+indirstuff: []
 graddate: "Spring 2015"
 majorshort: "Mechatronics Engineering"
 majorlong: ""
