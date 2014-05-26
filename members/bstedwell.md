@@ -6,9 +6,9 @@ title: Bennett Stedwell
 positions: ["Team Captian", "Structure Researcher", "Software Developer"]
 graddate: "Spring 2015"
 majorshort: "Mechatronics Engineering"
-majorlong: 
+majorlong: ""
 joindate: "Fall 2010"
-studentdate: 
+studentdate: ""
 male: "yes"
 memimage = "True"
 ---

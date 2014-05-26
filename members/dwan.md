@@ -4,11 +4,11 @@ fname: "Delbert"
 lname: "Wan"
 title: Delbert Wan
 positions: ["Structural Developer", "Structural Researcher", "Mechanical Designer"]
-graddate: 
+graddate: ""
 majorshort: "Mechanical Engineering"
-majorlong: 
-joindate: 
-studentdate: 
+majorlong: ""
+joindate: ""
+studentdate: "" 
 male: "yes"
 memimage = "True"
 ---

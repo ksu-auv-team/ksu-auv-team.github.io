@@ -4,11 +4,11 @@ fname: "Andrew"
 lname: "Geiman"
 title: Andrew Geiman
 positions: ["Structural Team Lead", "Structural Designer", "Structural Researcher", "Structural Manufacturer"]
-graddate: 
+graddate: ""
 majorshort: "Mechanical Engineering"
-majorlong: 
-joindate: 
-studentdate: 
+majorlong: ""
+joindate: ""
+studentdate: ""
 male: "yes"
 memimage = "True"
 ---

@@ -7,8 +7,8 @@ positions: ["Secretary", "Software Developer", "Content Management System Resear
 graddate: "Spring 2016" 
 majorshort: "Computer Science"
 majorlong: "Computer Science"
-joindate: "placeholder"
-studentdate: "placeholder" 
+joindate: ""
+studentdate: 
 male: "yes"
 memimage = "True"
 ---
