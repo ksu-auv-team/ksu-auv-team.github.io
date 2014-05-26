@@ -10,7 +10,7 @@ majorlong: "Bachelor of Science in Electrical Engineering"
 joindate: "Fall of 2013"
 studentdate: "Summer of 2012"
 male: "yes"
-memimage = "True"
+memimage: "True"
 ---
 {% include JB/setup %}
 Douglas one of our Electrical Engineers. He joined the team in the Fall semester of 2013. He has taken an interest in a variety of subjects.
