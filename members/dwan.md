@@ -10,6 +10,7 @@ majorlong:
 joindate: 
 studentdate: 
 male: "yes"
+memimage = "True"
 ---
 {% include JB/setup %}
 Delbert is one of our structural designers. He joined the team in the Fall semester of 2012. He interests are in mechanical engineering design and research. He has designed several cylinders for the housing.

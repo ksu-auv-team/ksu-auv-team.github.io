@@ -10,6 +10,7 @@ majorlong:
 joindate: 
 studentdate: 
 male: "yes"
+memimage = "True"
 ---
 {% include JB/setup %}
 Alex is one of our software developers. He joined the team in the Fall semester of 2012. He interests are in programing and software engineering. He has contributed in designing the structure of and the creation of our vision code. He is also a certified A+ technician.
