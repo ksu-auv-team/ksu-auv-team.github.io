@@ -8,7 +8,7 @@ graddate: "Spring 2016"
 majorshort: "Computer Science"
 majorlong: "Computer Science"
 joindate: ""
-studentdate: 
+studentdate: ""
 male: "yes"
 memimage: "True"
 ---
