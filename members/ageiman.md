@@ -10,6 +10,7 @@ majorlong:
 joindate: 
 studentdate: 
 male: "yes"
+memimage = "True"
 ---
 {% include JB/setup %}
 Andrew is one of our structural designers, analysts, manufacturers, and protypers. He joined the team in the Fall semester of 2012. He interests are in mechanical engineering testing and design. He has designed and analyzed our 2013 sub.
