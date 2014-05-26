@@ -4,6 +4,8 @@ fname: "Andrew"
 lname: "Geiman"
 title: Andrew Geiman
 positions: ["Structural Team Lead", "Structural Designer", "Structural Researcher", "Structural Manufacturer"]
+directstuff: []
+indirstuff: []
 graddate: ""
 majorshort: "Mechanical Engineering"
 majorlong: ""
