@@ -4,11 +4,11 @@ fname: "Alex"
 lname: "Evans"
 title: Alex Evans
 positions: ["Secretary", "Software Developer", "Content Management System Researcher"]
-graddate: 
+graddate: "" 
 majorshort: "Computer Science"
-majorlong: 
-joindate: 
-studentdate: 
+majorlong: ""
+joindate: ""
+studentdate: "" 
 male: "yes"
 memimage = "True"
 ---
