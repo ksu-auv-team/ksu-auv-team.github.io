@@ -10,11 +10,11 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : SPSU AUV Team
+title : KSU AUV Team
 author :
-  name : SPSU AUV Team
+  name : KSU AUV Team
   email : spsu.auv.team@gmail.com
-  github : spsu-auv-team
+  github : ksu-auv-team
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
