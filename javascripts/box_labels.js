@@ -50,7 +50,7 @@ var gcPlate = "#565656";
 var curColor = startGateOrange;
 var image;
 var curImgURL = "";
-var imageURLFile = "https://ksu-auv-team.github.io/img_urls.txt";
+var imageURLFile = "https://ksu-auv-team.github.io/url.txt";
 var imageURLs = new Array();
 var dataset = 0;
 var imageIdx = 0;
