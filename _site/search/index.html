@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Search | KSU AUV</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Search" />
+<meta name="author" content="KSU AUV" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Documentation for robots." />
+<meta property="og:description" content="Documentation for robots." />
+<link rel="canonical" href="http://localhost:4000/search/" />
+<meta property="og:url" content="http://localhost:4000/search/" />
+<meta property="og:site_name" content="KSU AUV" />
+<script type="application/ld+json">
+{"description":"Documentation for robots.","author":{"@type":"Person","name":"KSU AUV"},"@type":"WebPage","url":"http://localhost:4000/search/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/siteicon.png"},"name":"KSU AUV"},"headline":"Search","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="KSU AUV" />
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/"><img src="/images/emblem.svg" width="40" height="40" alt="KSU AUV logo"></a>
+				KSU AUV
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/">Welcome to AUV!</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/introduction/software-overview/">Introduction</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/introduction/software-overview/">Software Overview</a></li>
+								
+									<li class="nav-item "><a href="/introduction/installation-guide/">Installation Guide</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/planning/2018-goals/">Planning</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/planning/2018-goals/">2018 Software Goals</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/systems/running-the-sub/">Systems</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/systems/running-the-sub/">Running the Sub</a></li>
+								
+									<li class="nav-item "><a href="/systems/train-caffe/">Training SSD-Mobilenet with Caffe</a></li>
+								
+									<li class="nav-item "><a href="/systems/editing-documentation/">Editing Documentation</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/tutorials/external-resources/">Tutorials</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/tutorials/external-resources/">External Resources</a></li>
+								
+									<li class="nav-item "><a href="/tutorials/neural-networks-and-you/">Neural Networks and You</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/changelog/">Change Log</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>KSU AUV</h2>
+				<h3>Search</h3>
+			</div>
+			<article class="content">
+				<p><span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for "<strong id="search-query"></strong>"</span></p>
+<ul id="search-results"></ul>
+
+<script>
+	window.data = {
+		
+			
+				
+					
+					
+
+					"introduction-installation-guide": {
+						"id": "introduction-installation-guide",
+						"title": "Installation Guide",
+						"category": "",
+						"url": " /introduction/installation-guide/",
+						"content": "This is a list of all of AUV’s software dependencies and how to get them. Linux (Ubuntu 16.04 recommended) Open-source Unix-like operating system. Ubuntu is the most widely-used desktop version, and it’s strongly recommended. It’s pretty great, and it’s required for ROS and the Movidius SDK. If you use Ubuntu, you’ll need version 16.04 specifically, not the latest version. To install it, follow the link, download the installer, and follow the instructions. You’ll need to put it on a CD or flash drive, or ask around to find out whether someone has a drive you can borrow. You can dual-boot Linux with your existing OS by installing it on a separate partition, which the installer will walk you through. You’ll probably need about 50 GB of hard drive space if all you want is AUV data. (You might be able to get by with less if space is tight - I don’t know the exact number, so I’m estimating generously.) Python 2.7 This is almost certainly included with your OS, but it’s worth double-checking which version you have with python --version . If you don’t have 2.7, you’ll need to install it. Python 2 and 3 are different enough that programs written for one won’t work in the other, but you can have both installed at once. If you don’t have the right version (most likely you’d have Python 3), the terminal command to install it is sudo apt install python2.7 ROS (Kinetic) Short for Robotic Operating System, but it isn’t actually an operating system, more of a very complicated framework. We use the Kinetic version. Install it by following the instructions. OpenCV Short for Open Computer Vision. It’s a library that provides a lot of functions and data structures for image processing. I recommend installing this using a package manager, like apt. Instructions for that are here. If you don’t and build it from source instead, uninstalling it becomes . . . impractical. Caffe A neural network library, which we use because it’s the most easily compatible with the Movidius. A version of Caffe is automatically installed with the Movidius SDK, but it doesn’t include GPU support, so if you want to train the network, you’ll want to install your own version with the instructions here. Note that if you do that, you’ll also need CUDA. CUDA Nvidia’s proprietary graphics card interface software. If you aren’t training the neural network, you probably won’t need this for AUV (for now), because this is what we (and programs like Caffe and OpenCV) use to make the GPU process stuff, and currently neural network training is all we use GPUs for. It requires an Nvidia GPU. Install following the installation instructions. Movidius SDK and API This API is what runs the Movidius Neural Compute Sticks that run our object detection neural networks. If you want to work on code that uses them, you’ll need it. Installation instructions are here, with the rest of the documentation. Make sure to install version 2 of the API and not version 1. (They’re on different Git branches. If you install the old version by accident you can install the new one over it.) Unfortunately, this isn’t as well-supported as most of the software we use. It’s the most likely to have installation issues, the documentation isn’t great, and there aren’t many users, so it can be hard to find answers if you run into problems. Google is your friend, as is asking other software team members for help. We deal with it because once you get it working it’s great. If you have trouble, this forum thread is for troubleshooting and has a list of common issues. The rest of that forum is the main place discussion of the software happens, so it’s also a good place to look. Known installation issues: The Movidius SDK isn’t compatible with Anaconda. If you have Anaconda, you’ll have to uninstall it first. It has a weird relationship with OpenCV that I don’t fully remember. Very helpful, I know. A good text editor Whichever is your favorite. Visual Studio Code is great, but some people prefer Atom, Sublime Text, Vim, or something else."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"introduction-software-overview": {
+						"id": "introduction-software-overview",
+						"title": "Software Overview",
+						"category": "",
+						"url": " /introduction/software-overview/",
+						"content": "OpenCV OpenCV is an image processing library that lets us read images and videos from cameras or files easily and gives us ways to process those images. ROS ROS stands for Robot Operating System, but it isn’t an operating system. It’s really a message passing framework designed for robotics. It lets us send messages between programs - and between programming languages - easy, which makes it easier for our code to run in multiple threads, or even on multiple computers. ncs-ros.py ncs-ros.py captures images from the webcam using OpenCV, processes them to prepare them for the neural network, sends them to the Movidius to be processed, reads the result, and sends it to execute.py. SSD-Mobilenet The neural network we use for object identification uses the SSD-Mobilenet architecture on Caffe. Caffe is the base neural network library that provides the framework to build the network on. SSD-Mobilenet is the network architecture we use. It lets us get the location and type of objects found in the image we feed it. Movidius The Movidius Neural Compute Stick is a USB vision processing unit made by Intel for neural network inference, i.e. running neural networks. It comes with an API that lets us translate the network from a standard Caffe model to a format compatible with the NCS, then run it. We use it because it’s smaller and more efficient than a GPU, although it is less powerful. execute.py Execute.py is the Python file that has our higher-level AI code. It reads the bounding boxes ncs-ros.py sends and the pressure data from the sensor via the Pixhawk and uses them to decide where the sub needs to go, then sends out a joystick ROS message that movement_package can read. movement_package movement_package is a ROS package that moves the sub. In manual_mode, which is the one we use, it takes joystick commands in the form of a ROS joy message and translates them into movement commands for the Pixhawk. We can also use it with an actual joystick or game controller to drive the sub manually. Pixhawk The Pixhawk is a drone flight controller running ArduSub firmware, which lets it control the sub. It has a gyroscope, accelerometer, and other sensors that let it hold the sub steady when we aren’t sending it commands. It translates the commands we send from movement_package into signals the ESCs can understand. MavROS The Pixhawk uses software called MavLink to communicate with the computer. MavROS is a wrapper for MavLink that lets us access the Pixhawk through ROS instead of having to deal with two types of messages. ESCs &amp; motors ESC stands for electronic speed controller. The ESCs take the signal from the Pixhawk and power from the sub’s batteries and use the Pixhawk signal to control the power the motors receive, which controls their speed and direction."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"planning-2018-goals": {
+						"id": "planning-2018-goals",
+						"title": "2018 Software Goals",
+						"category": "",
+						"url": " /planning/2018-goals/",
+						"content": "Refactor existing code so it’s easier to work with Add to existing code so we have more working for next year (especially easyish tasks) Document everything so it’s easier to get new people started Recruit more programmers Competition obstacles: Doneish Start gate Easyish Dice buoys Path Medium Surfacing in area Dropper roulette wheel Hard Torpedoes Pickup drop off Funnels Gold chips Documentation Ideally want a guide tutorial we can give new people to get them started with minimal help. Probably won’t get that, so go for a guide we can give new people to get them started. We’ll probably need one for complete beginners and one for programmers. Explain what every module does and how it fits together. Explain how each module works (i.e. comment and document each) Explain how we use third-party libraries like ROS and the NCSDK, ideally with both links to their documentation and our own documentation of how we use it. Explain other software we use, like Ubuntu. Find ways to get nonprogrammers started and to get non-Python programmers switched over. Potential projects: Refactor execute.py Write more convenience scripts, especially for training and starting the sub tethered Find a better way to log data from runs Find a way to connect to the sub wirelessly (or otherwise without opening it) Update execute.py to use depth sensor throughout Figure out why pixhawk depth_hold won’t work Test stereo camera Retrain SSD properly for start gate Figure out if we need to label gate parts separately and rewrite if so Fix qualification code Write classifier for die faces or get SSD working with them if possible, then write dice code Train SSD for path marker (or other detection) &amp; write path following code Start work on claw dropper torpedoes First figure out what we’ll have Then be ready to start working with it"
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"systems-editing-documentation": {
+						"id": "systems-editing-documentation",
+						"title": "Editing Documentation",
+						"category": "",
+						"url": " /systems/editing-documentation/",
+						"content": "This website is hosted on GitHub Pages with Jekyll. This means that we don’t have to deal with separate hosting, and we can write site pages in Markdown, which Jekyll will render as soon as the new files are pushed to the repository. All the content on the site is stored in the _docs folder of the ksu-auv-team.github.io repository. Editing a page Edit that page in the repository and commit it. The changes will show up in a few minutes. Adding a new page Create a new Markdown (recommended) or HTML file in the _docs folder of the repository, like if you were editing a page. For the new page to be loaded in the bar, you’ll need YAML “front matter” at the beginning of the file. YAML is a markup language. The acronym is either Yet Another Markup Language or YAML Ain’t Markup Language, depending on who you ask, and Jekyll uses it for its configuration. For these documentation pages, you only need a few lines (note that they’re case sensitive): --- title: Title category: Category order: Number --- The title field will be displayed as the page title. The category field determines what category the page will be listed under in the sidebar. The order field determines what order pages are listed in on the sidebar. The page URL will be the same as the file path from the _docs folder, not the title in the front matter. Removing a page To remove a page, delete that file. Configuration We can also edit site configuration (like style) by editing repo files. Jekyll theme This site uses the Edition Jekyll theme, which is made for documentation, which is why it provides the navigation sidebar. That theme’s configuration file is _config.yml, a YAML file. The theme tells Jekyll how to load and render the HTML, CSS, and Markdown files. HTML CSS The site layout is HTML files in _layouts, styles are in main.scss and _sass, and images are in images. Since the site is rebuilt every time you push to it, you can edit those files too, even though they’re part of the theme. It has already been modified to use our images and color and to make the text smaller."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"systems-running-the-sub": {
+						"id": "systems-running-the-sub",
+						"title": "Running the Sub",
+						"category": "",
+						"url": " /systems/running-the-sub/",
+						"content": "Manual mode You’ll need the sub, the router, a gamepad, and another computer with ROS installed. On the sub, run roscore On the sub, if desired, run an imaging program. To record images, run cd ~ source pict &amp;&amp; python pict.py To run the neural network on the sub, which also records images, run python ~ source ncs-ros run-nnet.py From the ground station (the other computer), run rostopic list to make sure roscore is running and visible to both computers. It should print a list of topics, including at least rosout. From the ground station, with the gamepad plugged in, start the controller by running rosrun joy joy_node Again on the sub, run rosrun movement_package manual_mode This will arm the PixHawk. Once the PixHawk is armed, the sub will be ready. Order is not critical for all of these steps. Roscore must be started before anything else happens, but the other steps can happen in any order. The order given is the one that has been most convenient. Autonomous mode Make sure everything’s plugged in. I recommend making sure that reading from the killswitch is working as well. From the sub computer, run runsub (doublecheck what that command is later) This command will start roscore, movement_package, ncs-ros, and subdriver2018. Then close the sub up. After you turn the killswitch, there will be about a 15 (?) second wait for movement_package to successfully arm the Pixhawk), then another 20 (?) second wait for the sub to start moving to make sure the Pixhawk has time to arm and anyone in the water has time to reposition it."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"systems-train-caffe": {
+						"id": "systems-train-caffe",
+						"title": "Training SSD-Mobilenet with Caffe",
+						"category": "",
+						"url": " /systems/train-caffe/",
+						"content": "This is a placeholder so I don’t forget to do it."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"tutorials-external-resources": {
+						"id": "tutorials-external-resources",
+						"title": "External Resources",
+						"category": "",
+						"url": " /tutorials/external-resources/",
+						"content": "This is a list of external resources you might find useful. They are by no means the only ones or even necessarily the best ones out there; Google and trying things out are always your best resources. Terminal commands All of these apply to the Unix terminal, but Windows command prompt is similar in principle with some different commands. Learn Unix; it’s better. Tutorial: Terminal Basic introduction to the terminal, using only the minimum commands you need. Written for Mac, but applies to all Unix-based OSes. Codecademy Interactive command line tutorial Learn Enough Command Line to be Dangerous Very in-depth introduction to the command line, assuming no prior knowledge. Probably overkill for most people - you can start by learning a little bit and pick the rest up as you go along instead. Git Github tutorial Tutorial created by Github that covers the basics of Git and Github use Git cheat sheet Cheat sheet listing most frequently used Git commands Git documentation The official documentation for Git, which lists the details of all commands Python Codecademy Codecademy offers free interactive Python tutorials in Python 2.7, starting at the basic level. If you’re new to programming, this is probably the one you want to start with. Learn Python the Hard Way Learn Python the Hard Way is an ebook about Python that comes highly recommended. The free version only covers Python 3, but most of it is still applicable to Python 2.7. ROS ROS tutorials The ROS wiki’s intro to ROS. Focus on the basics and creating publishers and subscribers. Neural Networks 3Blue1Brown Neural Networks YouTube videos explaining the basic principles of how neural networks work. Stanford CS231n notes A class notes page for a class on convolutional neural networks Tensorflow Playground An online demo of a basic neural network. It’s built in TensorFlow, another neural network library, but the concepts are applicable to everything. Caffe Tutorial The official tutorial for Caffe, the neural network library we use."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"tutorials-neural-networks-and-you": {
+						"id": "tutorials-neural-networks-and-you",
+						"title": "Neural Networks and You",
+						"category": "",
+						"url": " /tutorials/neural-networks-and-you/",
+						"content": "Hi! This is an introduction to the basic principles behind neural networks and to their use in AUV. It’s designed to teach you just what you need to know to start working with neural networks, so there’s not much theory and a lot of practical information. The Problem We’re building an autonomous submarine. Since we can’t control the submarine directly, it has to be able to sense the environment around itself. The easiest sensing method to implement - and one of the most useful - is vision. Just strap a camera on that sucker (waterproofed, of course) and it’s ready to go. The problem is that visual data is hard for computers to interpret. Computers don’t see the way humans do; to a computer, an image is just a two-dimensional array of pixel values, where each value represents the color and or brightness of that pixel. That means that the computer needs to be able to identify what each part of the image corresponds to in the real world, which is difficult. Object Classification and Recognition There are two basic problems of machine vision that AUV solves with neural networks. Image Classification Given an image, determine what it is. Usually, the computer selects from a group of predefined (by the programmer) classes, like “dog”, “cat”, and “horse”, which is why it’s called “classification.” Object Recognition Given an image, determine what objects are in the image (if any) and their locations. This is a harder problem because it expects the computer to do more work; it has to be able to discard irrelevant parts of the image. Note that once you know where the object is in the image, the next step is determining what the object is - image classification. These are easy for humans, because our nervous systems are built for it, but hard for computers. A three-year-old human could point to the cat in this picture and tell you what it is, but computers have to be taught, and it isn’t is easy as saying shape = find_shape() if is_cat(shape): shape.type = 'cat' In theory, you could write a massive series of if statements that would identify every picture of a cat correctly, but it would be so complex that no human could keep track of it, and it might fail if a new type of cat picture you didn’t plan for showed up. Another possible solution, called blob detection, works by identifying all the pixels in a group, or blob, with roughly the same color (or that share some other property like brightness). This works well for simple objects, and in some situations it is still better than a neural network, but there are problems. It’s inflexible. If you have a blob detector precisely tuned to recognize objects of a specific color, even a small difference like a lighting change might throw it off. You also have to worry about contrast - for example, you can’t look for black or dark gray to find the cat in the image above because the background color is so similar. It doesn’t handle complexity well. Since you’re looking for groups of similar pixels, if the object you want to find has a lot of different pixels, you’ll have to do something to get around that, whether it’s detecting and assembling multiple blobs or something else. It takes a lot of work. If you want to get around the problems mentioned above, you do it by specifying your detector more carefully. That works, but it’s time consuming - you have to test, then revise, then test, then revise, etc. There are other simple mathematical methods for dividing an image and recognizing things within it, like edge detection, but those are less relevant to what we do than blob detection. Why neural networks? Because they work better than anything else we’ve come up with. That answer is simplistic, but true. At this point, we (we meaning humans) haven’t found a better way to automate object classification and recognition. The key is that they can learn. Instead of trying to write our own series of if statements, we feed the computer data and let it find a system of functions that produce the output we want. The neural network is the structure that holds those functions. Basics A neural network is a complex system of linear functions. Their design is inspired by the structure of the brain, which is why they’re called neural networks, after neurons. It is composed of nodes, or neurons, which are connected to each other through inputs and outputs (which are numbers between 0 and 1). These neurons are arranged into layers, so that each neuron in one layer is connected to some or all of the neurons in the next layer. Each input has a weight, which tells the neuron how much to use that input - how seriously to take it, if you want an an analogy. Each neuron takes in its inputs, weighs them, then uses its activation function to determine the output. The weights are what determines what the network does, because they’re what controls the input to each neuron. However, it isn’t feasible to write them by hand, so we have to train the network to find them automatically. That happens with a process called backpropagation: basically, you give the network an input and the desired output, and it modifies its own weights to get its actual output closer to the desired output. Since just one input only tells you how to find one output, you need to train the network on a huge number of inputs, ideally hundreds or thousands, all of which need to be processed by a human to determine what the network’s output should be. This process is simple, but labor-intensive. For more information on the theory and math behind neural networks, this video series, which explains them better than this can, is highly recommended. In more complex neural networks, layers can be more complicated than a simple 2D array. For example, input layers for image processing often have three layers - one each for red, green, and blue (the three components of a pixel value). Others perform more complicated operations, like convolutional layers that consider a region of an image at a time in convolutional neural networks (CNNs), which we currently use, and pooling layers, which shrink the network to reduce the computation necessary. This webpage from a Stanford course has more information on how CNNs work. Layer sizes vary. The input and output layer sizes are usually matched to something: for image classification, the input layer is typically the size of the input image, and the output layer typically has one neuron per class. The sizes of the layers vary widely depending on what the layer does. Since a neural network is ultimately a series of linear functions, calculating those functions (for training or inference) takes math, and a lot of it. Every connection between neurons has to be calculated, and since the number of connections multiplies exponentially, the number of calculations that has to be performed is massive, and it’s all with floating point (decimal) numbers, which is harder than integer math. The good news is that since the calculations don’t depend on each other and are all the same type, they’re easy to process in parallel (i.e. by different processors). Fortunately, GPUs (Graphics Processing Units) are ideal for neural network processing because they’re optimized for graphical processing, which requires the same kind of math - it’s easily parallelized floating point math, with a large number of simple computations. The speed difference between a neural network running on a CPU and a GPU is massive; training is many times faster on a GPU. TensorFlow Playground will let you experiment with a simple neural network in your browser. It’s a good way to see some of the structure in practice at a scale that’s comprehensible. Tools In practice, building neural networks from scratch is very uncommon. There’s just no point - there are enough resources out there already that you can do most things without much modification of your own. Here are the ones we use, and a few others we don’t that you’ll probably hear about. Caffe Caffe is the neural network framework we use. It is fairly simple to work with, with all its configuration done through .prototxt files. (They look like JSON files with a slightly different syntax.) It allows us to train our network and move it to the Movidius easily. Movidius The Intel Movidius Neural Compute Stick is a USB vision processing unit that we use to run neural network inference, which means running the network to get output, as opposed to training. The Movidius uses a GPU-like architecture and cores to get good performance, but it’s smaller and cheaper than a GPU would be, which makes it easier for us to put one (or two) in the sub. The catch is that it is still slower than a GPU, and unlike a GPU we can’t use it to train a neural net, so we have to use a PC for that. Using the Movidius also forces us to use Intel’s software for it, which has some flaws and restrictions. TensorFlow TensorFlow is another neural network framework like Caffe. It does roughly the same job, and it’s more popular than Caffe, but we don’t use it because Caffe is better supported by the Movidius, the hardware we run our networks on. Others Caffe and TensorFlow are the most widely used, but you might also hear about Keras, which is a simpler wrapper for TensorFlow, Caffe 2, Pytorch, or Darknet. Predesigned networks In practice, it’s rarely worth building a neural network of your own. There are enough preexisting networks out there that it’s easier to retrain one, especially since most of them were designed by experts. We’re currently using MobileNet-SSD for object recognition, which combines SSD (Single-Shot Detection) for recognition with MobileNet for classification. Other popular networks are YOLO (You Only Look Once), ImageNets, VGGNet and ResNet. Datasets We don’t use these directly, but it’s worth knowing what some of the most common ones are because you’ll hear about them a lot, especially when you’re comparing performance between networks. It’s usually expressed in terms of performance on a common dataset, since they provide a reliable baseline. to be added Use In practice, actually using a neural network is much easier than understanding it. It isn’t necessary to understand everything about a network to use it; just enough to make it work. Data Collection After you’ve chosen a network, the first step is collecting and labeling the data you’re going to train the network on. Since we’re using neural nets for submarine vision, we’ll usually collect our data by keeping a video running while we pilot the submarine to the things we want to see. Once you have a dataset, you need to label it so that you can use it for training. We have a labeling tool on GitHub, which is what we have used in the past. You’ll have to change the list of classes to the classes you’re training for, but it works and it works with the rest of the infrastructure we currently have. Other solutions also exist. Training Training the network is simple but time consuming. It can technically be done on any computer, but in practice you’ll always want to use a computer with a powerful GPU because anything else is too slow. We have one computer with a GPU at the lab (for now), and you may have one of your own. To take a dataset, convert it to the format Caffe expects, and train a network, see the documentation for our network. After reading that documentation, you may think the process is an incomprehensible mess. You’re right; that’s one thing we need to fix - we need to rewrite our script files for that to eliminate the extra steps you have to take now. Inference To run the network, you’ll have to get the complete weight file from Caffe (the documentation I haven’t added will explain where). Once you do that, you’ll have to convert it into a Movidius graph file with the Movidius SDK, specifically the MVNCCompile command. Once you have your graph file, tell the sub’s program (most likely run-nnet.py - see the ncs-ros documentation for details) where it is and run it. More information For more information, check out our tutorials page, any reputable AI textbook, or the rest of the internet."
+					}
+
+					
+				
+			
+		
+	};
+</script>
+<script src="/scripts/lunr.min.js"></script>
+<script src="/scripts/search.js"></script>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>
