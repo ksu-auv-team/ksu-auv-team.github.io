@@ -4,7 +4,7 @@ category: Introduction
 order: 1
 ---
 
-![sub architectural diagram](https://raw.githubusercontent.com/ksu-auv-team/training/master/images/2018_sub_architecture.png)
+![sub architectural diagram](https://ksu-auv-team.github.io/images/2018-sub-architecture.png)
 
 ### OpenCV
 OpenCV is an image processing library that lets us read images and videos from cameras or files easily and gives us ways to process those images.

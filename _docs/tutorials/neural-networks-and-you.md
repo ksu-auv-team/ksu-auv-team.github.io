@@ -25,7 +25,7 @@ Given an image, determine what it is. Usually, the computer selects from a group
 
 Given an image, determine what objects are in the image (if any) and their locations. This is a harder problem because it expects the computer to do more work; it has to be able to discard irrelevant parts of the image. Note that once you know where the object is in the image, the next step is determining what the object is - image classification.
 
-<img alt="deathkitty riding unicorn" src="https://raw.githubusercontent.com/ksu-auv-team/training/master/images/deathcat.jpg"  width="500px" style="align: center; margin: 25px">
+<img alt="deathkitty riding unicorn" src="https://ksu-auv-team.github.io/images/deathcat.jpg"  width="500px" style="align: center; margin: 25px">
 
 These are easy for humans, because our nervous systems are built for it, but hard for computers. A three-year-old human could point to the cat in this picture and tell you what it is, but computers have to be taught, and it isn't is easy as saying
 
