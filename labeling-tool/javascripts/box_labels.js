@@ -23,35 +23,17 @@ var clickColor = new Array();
 var paint;
 
 //colors
-var pathMarkerBrown = "#f4a460";
-var startGateOrange = "#ff6614";
-var channelBlk = "#0a0807";
-var d1 = "#d1f442";
-var d2 = "#ad42f4";
-var d5 = "#4e42f4";
-var d6 = "#f4ce42";
-var dX = "#7f65f2";
-var claw = "#e2dfd3";
-var rWheel = "#a59045";
-var redSide = "#870a1f";
-var blackSide = "#111166";
-var slotMachine = "#51dbc6";
-var handle = "#ff00ff";
-var rTarget = "#ce2b2b";
-var yTarget = "#c1bc1d";
-var rBallTray = "#c11d59";
-var gBallTray = "#2aff0a";
-var floatArea = "#3f3d29";
-var rFunnel = "#a51021";
-var gFunnel = "#254727";
-var yFunnel = "#c2c902";
-var gcDis = "#c6a22b";
-var gcPlate = "#565656";
+var pink = "#ff00ff";
+var red = "#ff0000";
+var orange = "#ffa500";
+var yellow = "#ffff00";
+var green = "#0000ff";
 
-var curColor = startGateOrange;
+
+var curColor = pink;
 var image;
 var curImgURL = "";
-var imageURLFile = "https://ksu-auv-team.github.io/url.txt";
+var imageURLFile = "https://ksu-auv-team.github.io/labeling-tool/url.txt";
 var imageURLs = new Array();
 var dataset = 0;
 var imageIdx = 0;
@@ -203,30 +185,11 @@ function enableDrawing(){
 }
 
 
-$("#PMBtn").click(function(){curColor = pathMarkerBrown});
-$("#SGBtn").click(function(){curColor = startGateOrange});
-$("#CHANbtn").click(function(){curColor = channelBlk});
-$("#d1btn").click(function(){curColor = d1});
-$("#d2btn").click(function(){curColor = d2});
-$("#d5btn").click(function(){curColor = d5});
-$("#d6btn").click(function(){curColor = d6});
-$("#dXbtn").click(function(){curColor = dX});
-$("#Clbtn").click(function(){curColor = claw});
-$("#RWbtn").click(function(){curColor = rWheel});
-$("#RSbtn").click(function(){curColor = redSide});
-$("#BSbtn").click(function(){curColor = blackSide});
-$("#SMbtn").click(function(){curColor = slotMachine});
-$("#Hbtn").click(function(){curColor = handle});
-$("#RTbtn").click(function(){curColor = rTarget});
-$("#YTbtn").click(function(){curColor = yTarget});
-$("#RBTbtn").click(function(){curColor = rBallTray});
-$("#GBTbtn").click(function(){curColor = gBallTray});
-$("#FAbtn").click(function(){curColor = floatArea});
-$("#RFbtn").click(function(){curColor = rFunnel});
-$("#GFbtn").click(function(){curColor = gFunnel});
-$("#YFbtn").click(function(){curColor = yFunnel});
-$("#GDbtn").click(function(){curColor = gcDis});
-$("#GPbtn").click(function(){curColor = gcPlate});
+$("#pbtn").click(function(){curColor = pink});
+$("#rbtn").click(function(){curColor = red});
+$("#obtn").click(function(){curColor = orange});
+$("#ybtn").click(function(){curColor = yellow});
+$("#gbtn").click(function(){curColor = green});
 
 $("#unSubmitButton").click(function(){
     resetVars();
@@ -325,30 +288,11 @@ function getLabel(){
 }
 
 function nameColor(color){
-    if (color === pathMarkerBrown) return "path_marker";
-    else if (color === startGateOrange) return "start_gate";
-    else if (color === channelBlk) return "channel";
-    else if (color === claw) return "claw";
-    else if (color === d1) return "die1";
-    else if (color === d2) return "die2";
-    else if (color === d5) return "die5";
-    else if (color === d6) return "die6";
-    else if (color === dX) return "dieX";
-    else if (color === rWheel) return "roulette_wheel";
-    else if (color === redSide) return "red_wheel_side";
-    else if (color === blackSide) return "black_wheel_side";
-    else if (color === slotMachine) return "slot_machine";
-    else if (color === handle) return "slot_handle";
-    else if (color === rTarget) return "r_slot_target";
-    else if (color === yTarget) return "y_slot_target";
-    else if (color === rBallTray) return "r_ball_tray";
-    else if (color === gBallTray) return "g_ball_tray";
-    else if (color === floatArea) return "floating_area";
-    else if (color === rFunnel) return "r_funnel";
-    else if (color === gFunnel) return "g_funnel";
-    else if (color === yFunnel) return "y_funnel";
-    else if (color === gcDis) return "g_chip_dispenser";
-    else if (color === gcPlate) return "g_chip_plate";
+    if (color === pink) return "pink-balloon";
+    else if (color === red) return "red-balloon";
+    else if (color === orange) return "orange-balloon";
+    else if (color === yellow) return "yellow-balloon";
+    else if (color === green) return "green-balloon";
 }
 
 });
