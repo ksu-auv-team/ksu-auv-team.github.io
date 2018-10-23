@@ -27,7 +27,7 @@ var pink = "#ff00ff";
 var red = "#ff0000";
 var orange = "#ffa500";
 var yellow = "#ffff00";
-var green = "#0000ff";
+var green = "#00ff00";
 
 
 var curColor = pink;
@@ -170,11 +170,20 @@ function enableDrawing(){
             resetVars();
             updateDescription();1
             return false;
+        } if (e.which == 49){ // 1
+            curColor = pink;
+            return false;
+        } if (e.which == 50){ // 2
+            curColor = red;
+            return false;
+        } if (e.which == 51){ // 3
+            curColor = orange;
+            return false;
         } if (e.which == 52){ // 4
-            curColor = pathMarkerBrown;
+            curColor = yellow;
             return false;
         } if (e.which == 53){ // 5
-            curColor = startGateOrange;
+            curColor = green;
             return false;
         } if (e.which == 90){ // z
             document.getElementById("undoButton").click();
