@@ -33,7 +33,7 @@ var green = "#00ff00";
 var curColor = pink;
 var image;
 var curImgURL = "";
-var imageURLFile = "https://ksu-auv-team.github.io/labeling-tool/url.txt";
+var imageURLFile = "https://raw.githubusercontent.com/ksu-auv-team/makerfaire-2018-data/master/url.txt";
 var imageURLs = new Array();
 var dataset = 0;
 var imageIdx = 0;
