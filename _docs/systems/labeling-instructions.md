@@ -4,7 +4,7 @@ category: Systems
 order: 4
 ---
 
-### [Labeling tool](ksu-auv-team.github.io/labeling-tool/labeling.html)
+### [Labeling tool](https://ksu-auv-team.github.io/labeling-tool/labeling.html)
 
 Thank you for helping label images! Here's how our labeling tool works:
 
