@@ -37,7 +37,7 @@ Short for Open Computer Vision. It's a library that provides a lot of functions 
 I recommend installing this using a package manager, like apt. [Instructions for that are here.](https://docs.opencv.org/3.4.1/d2/de6/tutorial_py_setup_in_ubuntu.html) If you don't and build it from source instead, uninstalling it becomes . . . impractical.
 
 ### [Caffe](http://caffe.berkeleyvision.org/)
-A neural network library, which we use because it's the most easily compatible with the Movidius. A version of Caffe is automatically installed with the Movidius SDK, but it doesn't include GPU support, so if you want to train the network, you'll want to install your own version with the instructions [here](http://caffe.berkeleyvision.org/install_apt.html). Note that if you do that, you'll also need CUDA.
+A neural network library, which we use because it's the most easily compatible with the Movidius. A version of Caffe is automatically installed with the Movidius SDK, but it doesn't include GPU support, so if you want to train the network, you'll want to install your own version with the instructions [here](http://caffe.berkeleyvision.org/install_apt.html). Note that if you do that, you'll also need CUDA. There's also a [list of commonly encountered build issues](https://github.com/BVLC/caffe/wiki/Commonly-encountered-build-issues).
 
 ### [CUDA](https://developer.nvidia.com/cuda-downloads)
 Nvidia's proprietary graphics card interface software. If you aren't training the neural network, you probably won't need this for AUV (for now), because this is what we (and programs like Caffe and OpenCV) use to make the GPU process stuff, and currently neural network training is all we use GPUs for. It requires an Nvidia GPU. Install following the installation instructions.
