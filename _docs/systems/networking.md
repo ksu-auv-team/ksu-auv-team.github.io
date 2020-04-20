@@ -6,6 +6,8 @@ order: 5
 
 This page explains how to connect the sub to another computer.
 
+![Networking](https://github.com/ksu-auv-team/ksu-auv-team.github.io/blob/master/images/Networking_Diagram.jpg)
+
 ## Physical connection
 The physical connection is simple. All you need is for both computers to be connected to the router by ethernet cables. If you need the computers' IP addresses you should be able to find them by checking the router management page at `192.168.1.1`.
 
