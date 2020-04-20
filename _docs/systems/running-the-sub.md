@@ -3,25 +3,24 @@ title: Running the Sub
 category: Systems
 order: 1
 ---
+## Introduction
+The main way that we launch processes on the sub is from the `runsub.py` script that lives in the `sub_utilities/scripts` directory. You can run it with the command line argument --help for all the possible uses: `./runsub.py --help`
+
+Additionally, this is is all contingent on the fact that you have your networking setup properly, if you don't it wont work.
 
 ## Manual mode
 
 You'll need the sub, the router, a gamepad, and another computer with ROS installed.
 
-1. On the sub, run
+1. On the sub, cd into the sub_utilities repo, then run
 ```
-roscore
-```
-
-2. On the sub, if desired, run an imaging program. To record images, run
-```
-cd ~/source/pict/ && python pict.py
+./scripts/runsub.py --manual
 ```
 
-    To run the neural network on the sub, which also records images, run
-    ```
-    python ~/source/ncs-ros/run-nnet.py
-    ```
+2. If you don't want to run the neural network, then run:
+```
+./scripts/runsub.py --manual --no-network
+```
 
 3. From the ground station (the other computer), run 
 ```
@@ -33,24 +32,41 @@ to make sure roscore is running and visible to both computers. It should print a
 ```
 rosrun joy joy_node
 ```
+The sub drives like a drone, so check out [this link](https://dronenodes.com/wp-content/uploads/2016/07/Drone-Quadcopter-Transmiter-Anatomy.jpg) for help, sort of. **YOU MUST HOLD DOWN THE LEFT TRIGGER TO MOVE THE SUB AT ALL**
 
-5. Again on the sub, run
-```
-rosrun movement_package manual_mode
-```
-This will arm the PixHawk. Once the PixHawk is armed, the sub will be ready.
-
-Order is not critical for all of these steps. Roscore must be started before anything else happens, but the other steps can happen in any order. The order given is the one that has been most convenient.
 
 ## Autonomous mode
 Make sure everything's plugged in. I recommend making sure that reading from the killswitch is working as well.
 
-From the sub computer, run 
-```
-runsub
-```
-(doublecheck what that command is later)
+1. SSH into the sub computer
 
-This command will start roscore, movement_package, ncs-ros, and subdriver2018.
+2. Make sure that the sub's IP address is set to localhost in the `~/.basrh`, see networking for more information
 
-Then close the sub up. After you turn the killswitch, there will be about a 15 (?) second wait for movement_package to successfully arm the Pixhawk), then another 20 (?) second wait for the sub to start moving to make sure the Pixhawk has time to arm and anyone in the water has time to reposition it.
+3. Run screen to start a new detachable process
+```
+screen
+```
+
+4. Start up runsub 
+ 
+```
+./scripts/runsub.py
+```
+This command will start roscore, movement_package, subdriver, and probably other stuff.
+Everything runs off of the killswitch arming and disarming. This is how you start up the proccess while in the water.
+
+5. Hit `Ctrl+a` then `d` to detach the process from the current screen. You may not remove the tether and put it in the water.
+
+6. Once you're done testing, you may re-attach the tether, SSH back in, then `screen -r` to pull up the most recent `screen` session. You may now kill the processes like normal.
+
+## Simulation mode
+This is a way to test your code without having to actually hook it up to the sub
+
+1. Just run runsub with some specific commands
+```
+./scripts/runsub.py --no-arduino --debug-execute
+```
+
+This should start up all the processes it can without crashing. Don't worry if you see lots of red stuff, it's going to try and start up things that you don't have attached, but you should see stuff populate the terminal.
+Everything gets logged to the `logs` directory when you end the task.
+
