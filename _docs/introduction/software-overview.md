@@ -14,11 +14,15 @@ OpenCV is an image processing library that lets us read images and videos from c
 ROS stands for Robot Operating System, but it isn't an operating system. It's really a message passing framework designed for robotics. It lets us send messages between programs - and between programming languages - easy, which makes it easier for our code to run in multiple threads, or even on multiple computers.
 
 ### [Tensorflow](https://github.com/tensorflow/tensorflow)
+Tensorflow is a Neural Network architecture that helps us do object detection. It is able to be trained to recognize any arbitrary set of images in the water. We typically use the ssd_mobilenet networks from the [Tensorflow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
 
-### Pixhawk
+### [Pixhawk](https://pixhawk.org/)
 The Pixhawk is a drone flight controller running ArduSub firmware, which lets it control the sub. It has a gyroscope, accelerometer, and other sensors that let it hold the sub steady when we aren't sending it commands. It translates the commands we send from movement_package into signals the ESCs can understand.
 
-### MavROS
+### [Ardusub](https://www.ardusub.com/)
+Ardusub is the firmware that runs on the Pixhawk based on the extremely sucessful Ardupilot code base.
+
+### [MavROS](http://wiki.ros.org/mavros)
 The Pixhawk uses software called MavLink to communicate with the computer. MavROS is a wrapper for MavLink that lets us access the Pixhawk through ROS instead of having to deal with two types of messages.
 
 ## Our ROS Packages
