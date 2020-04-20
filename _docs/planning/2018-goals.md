@@ -1,7 +1,7 @@
 ---
 title: 2018 Software Goals
 category: Planning
-order: 1
+order: 2
 ---
 
 * Refactor existing code so it's easier to work with
