@@ -10,7 +10,7 @@ This page explains how to connect the sub to another computer.
 The physical connection is simple. All you need is for both computers to be connected to the router by ethernet cables. If you need the computers' IP addresses you should be able to find them by checking the router management page at `192.168.1.1`.
 
 ## The rest of the connection
-Once you're physically connected, you should be able to SSH into the sub computer to run whatever you need, including the sub starting script or `roscore`. See [Running the Sub](http://ksu-auv-team.github.io/systems/running-the-sub/) for more information, although it may be out of date.
+Once you're physically connected, you should be able to SSH into the sub computer to run whatever you need, including the sub starting script or `roscore`. See [Running the Sub](http://ksu-auv-team.github.io/systems/running-the-sub/) for more information.
 
 ## Basic ROS networking
 
