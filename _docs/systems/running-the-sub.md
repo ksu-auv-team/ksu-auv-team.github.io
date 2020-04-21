@@ -70,3 +70,39 @@ This is a way to test your code without having to actually hook it up to the sub
 This should start up all the processes it can without crashing. Don't worry if you see lots of red stuff, it's going to try and start up things that you don't have attached, but you should see stuff populate the terminal.
 Everything gets logged to the `logs` directory when you end the task.
 
+## Running Just One Part
+In addition to running the whole sub with the `runsub.py` script, we also have the ability to run just a single piece if you only want to test one thing.
+
+All of these python scripts can also be run using ROS instead of pathing to them. The difference would look like this if you were trying to run the `execute_withState.py` script from the `subdriver` package:
+```
+# Running in the traditional style:
+python /path/to/sub_utilities/src/subdriver/src/execute_withState.py
+
+# Running using the ROS style:
+rosrun subdriver execute_withState.py
+```
+Obviously, the latter is much easier to type, but we also provide the full paths below, so you will know where these scripts live.
+
+### Running the State Machine (subdriver)
+
+So you wanna run the state machine, huh?
+
+Well, that's done through the `execute_withState.py` script located in the `sub_utilities/src/subdriver/src` directory. if you run a `./execute_withState.py -h` it will show a list of all the available commands that you can run.
+Typically we want to pass in the value for whatever state machine we want to run, for example `python execute_withState.py -m BaseStateMachine` but by default the main state machine is run. 
+
+A quick side note, you will need to open up a second terminal and run `roscore` to start the ROS master node.  
+You can just leave `roscore` running in a separate terminal for the whole time. It's what's connecting all the nodes in the background.
+
+By making your own state machines, you are able to test that the behavior of your new code behaves in the way that you expect it to. For example, if you're working on a new torpedo machine, you can wire up a state that lines you up with the torpedo board, then another state that fires a torpedo, then a final state that leaves the torpedo board. And all of this you can do in simulation, allowing you to check most of the functionality of your code without ever having to run it on the actual sub. 
+
+##### Using the --arbitrary Flag  
+One really nice thing about the state machine is that we have the ability to test a single state without the need to create an individual state machine for it. To do this, we use the `--arbitrary` flag when running `python execute_withState.py`. The `--arbitrary` flag requires you to pass in the module path and class name to the state you want to use. For example, if you created a new state that had the following path `subdriver/StateMachine/interact/my_cool_state.py` and the name of the class was `My_Cool_State(Sub)` you would pass it in as following:
+```bash
+python execute_withState.py --arbitrary StateMachine.interact.my_cool_state.My_Cool_State
+```
+And the state machine would run through three states. 
+ 1. Dumb_Start (Sinks the sub for a few seconds to get it underwater and moves forward slightly)
+ 2. My_Cool_State (Does whatever you programmed it to do)
+ 3. Surface (Brings the sub back up to the surface)
+
+This allows us to test individual states in the pool without having to write special state machines for each one.
