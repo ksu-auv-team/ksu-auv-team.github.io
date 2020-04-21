@@ -4,7 +4,6 @@ category: Development
 order: 2
 ---
 
-# network_wrapper
 Jetson Nano ML install scripts, automated optimization of robotics detection models, and easy to use debugging flags
 
 ## Motivation
