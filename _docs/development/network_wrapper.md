@@ -1,6 +1,6 @@
 ---
-title: Development
-category: Network Wrapper
+title: Network Wrapper
+category: Development
 order: 2
 ---
 
