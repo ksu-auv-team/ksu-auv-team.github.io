@@ -14,8 +14,9 @@ cd /path/to/sub-utilities
 git submodule update --init --recursive # Clones all the ardupilot repos needed
 ./simulation/ardupilot/Tools/environment_install/install-prereqs-ubuntu.sh -y # Installs dependencies
 . ~/.profile # Reloads your path variables
-./simulation/ardupilot/waf configure --board Pixhawk1 # Loads the configuration for the pixhawk
-./simulation/ardupilot/waf sub # Builds the ardupilot repo
+cd simulation/ardupilot
+./waf configure --board Pixhawk1 # Loads the configuration for the pixhawk
+./waf sub # Builds the ardupilot repo
 ```
 
 **At this point, it's required that you log out, then back in!**
