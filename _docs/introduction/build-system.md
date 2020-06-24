@@ -17,3 +17,8 @@ Once this is done, you will have a few new directoryies, but the most important 
 The `setup.py` that you ran before does a few helpful things. Namely, it adds the `devel/setup.bash` to your working directory. This allows you to call any `roslaunch`, `rosrun`, or other system things from anywhere. Additionally, it adds some useful aliases to your `~/.bashrc` all starting with `auv-`. So, if you type `auv-` into your terminal and hit the tab key twice, it will populate with all the possible commands. 
 
 All of the `tail` commands are used for watching the log files populate in real time. 
+
+For example, if you want to watch the execute logs:
+```bash
+auv-tail-execute
+```
