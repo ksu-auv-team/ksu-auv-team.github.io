@@ -106,3 +106,7 @@ And the state machine would run through three states.
  3. Surface (Brings the sub back up to the surface)
 
 This allows us to test individual states in the pool without having to write special state machines for each one.
+
+
+## Watching the Logs in Real Time
+If you want to watch the logs for any of the nodes in real time, you can do that using the helpful `auv-tail-*` alias that we add to the system. Just type that into your terminal, then hit tab twice to auto-fil the rest and you can see the logs in real time.
