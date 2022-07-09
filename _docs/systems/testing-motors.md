@@ -1,5 +1,5 @@
 ---
-title: Testing Motors outside of the pool with the pixhawk
+title: Testing Motors with pixhawk
 category: Systems
 order: 6
 ---
