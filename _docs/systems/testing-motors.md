@@ -1,7 +1,7 @@
 ---
 title: Testing Motors with pixhawk
 category: Systems
-order: 6
+order: 7
 ---
 ## Introduction
 This is how you can test to make sure your motors are wired to the pixhawk correctly just in case they aren't labeled or someone (Dante/Kevin) plugs them in wrong.
