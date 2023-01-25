@@ -24,4 +24,4 @@ For example, if you want to watch the execute logs:
 auv-tail-execute
 ```
 
-**Note: If you are on Ubuntu 20.04 and using ROS Noetic, be sure to use the** ` noetic ` **branch.**
+**Note: If you are on Ubuntu 20.04 and using ROS Noetic, be sure to use the** `noetic` **branch.**
