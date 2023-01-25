@@ -1,7 +1,7 @@
 ---
 title: Building The Repo
 category: Introduction
-order: 3
+order: 4
 ---
 
 ### Build the System
