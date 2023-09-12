@@ -1,0 +1,63 @@
+:root {
+    --background_main: #ffffff;
+    --background_secondary: #F5B400;
+    --background_mono: #2d2926;
+    --theme: #ffc629;
+    --accent: #2962FF;
+    --header: #2d2926;
+    --text: #000000;
+    --text_inverted: #ffffff;
+}
+
+header, body, footer {
+    background: var(--background_main);
+}
+
+h1, h2, button, h3, label {
+    color: var(--header);
+}
+
+p, a, ul, li, a {
+    color: var(--text);
+}
+
+button {
+    cursor: pointer;
+    background: var(--background_mono);
+    border: none;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+button:hover {
+    color: var(--theme);
+}
+
+input {
+    margin: 1rem .5rem;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background_main);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--header);
+    border-radius: 1rem;
+}
+
+svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+svg path {
+    fill: var(--theme);
+}
