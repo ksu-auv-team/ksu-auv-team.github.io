@@ -4,21 +4,75 @@
     --background_mono: #2d2926;
     --theme: #ffc629;
     --accent: #2962FF;
+    --water_one: #4685ff;
+    --water_two: #002c83;
+    --water_three: #0059ff;
     --header: #2d2926;
     --text: #000000;
     --text_inverted: #ffffff;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 2rem 0;
+}
+
 header, body, footer {
-    background: var(--background_main);
+    background: var(--background_mono);
 }
 
 h1, h2, button, h3, label {
-    color: var(--header);
+    color: var(--theme);
 }
 
-p, a, ul, li, a {
+p, a, ul, li {
     color: var(--text);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--background_secondary);
+    padding: 1rem;
+}
+
+nav a {
+    position: relative;
+    font-weight: bold;
+    color: var(--text);
+    text-decoration: none;
+    background: var(--background_secondary);
+}
+
+nav a:before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--text);
+    transition: .5s;
+}
+
+nav a:after {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--text);
+    transition: .5s;
+}
+
+nav a:hover::before, nav a:hover::after {
+    width: 50%;
 }
 
 button {

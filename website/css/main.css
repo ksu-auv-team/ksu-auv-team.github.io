@@ -5,8 +5,12 @@
 }
 
 .row {
+    width: 75%;
     display: flex;
-    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2rem;
+    transition: .4s;
 }
 
 .button_row {

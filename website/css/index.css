@@ -1,0 +1,24 @@
+@import "base.css";
+
+body {
+    background: linear-gradient(180deg, var(--water_one), 70%, var(--water_two));
+    height: 100vh;
+}
+
+.row {
+    margin: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+#spotlight_one, #spotlight_two, #spotlight_three {
+    width: 10rem;
+    aspect-ratio: 1;
+}
