@@ -1,15 +1,19 @@
 @import "base.css";
 
+/*CSS page for index.html*/
+
 body {
+    position: relative;
     background: linear-gradient(180deg, var(--water_one), 70%, var(--water_two));
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.row {
-    margin: 1rem;
+section {
+    margin: 15rem;
 }
 
 main {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,4 +25,46 @@ main {
 #spotlight_one, #spotlight_two, #spotlight_three {
     width: 10rem;
     aspect-ratio: 1;
+}
+
+#vid_placer {
+    position: relative;
+    aspect-ratio: 3/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#vid_wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#ex_vid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#vid_text {
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    text-shadow: var(--background_mono) 2px 2px;
+}
+
+.underwater_bubble {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 5rem;
+    aspect-ratio: 1;
+    background: var(--water_light);
+    border: solid 2px var(--background_main);
+    border-radius: 5rem;
+    transition: .5s;
+    z-index: -1;
 }

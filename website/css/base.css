@@ -4,6 +4,7 @@
     --background_mono: #2d2926;
     --theme: #ffc629;
     --accent: #2962FF;
+    --water_light: #aac7ff;
     --water_one: #4685ff;
     --water_two: #002c83;
     --water_three: #0059ff;
@@ -13,6 +14,7 @@
 }
 
 body {
+    position: relative;
     margin: 0;
     padding: 0;
 }
@@ -90,7 +92,7 @@ button:hover {
 }
 
 input {
-    margin: 1rem .5rem;
+    height: 1rem;
     border-radius: .5rem;
     padding: .5rem;
 }
@@ -100,17 +102,18 @@ input {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--background_main);
+    background: var(--background_mono);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--header);
-    border-radius: 1rem;
+    background: var(--background_secondary);
+    border-radius: 0 0 1rem 1rem;
 }
 
 svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    max-height: 100%;
 }
 svg path {
     fill: var(--theme);

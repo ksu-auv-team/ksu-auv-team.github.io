@@ -37,3 +37,26 @@
     left: 0;
 
 }
+
+.search {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_button {
+    height: 2rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    padding: 0;
+}
+
+.search_button:hover {
+    animation: search_hover 300ms alternate 3;
+}
+
+@keyframes search_hover {
+    0% {rotate: 15deg}
+    100% {rotate: 0}
+}

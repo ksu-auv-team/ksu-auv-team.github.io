@@ -8,7 +8,7 @@
     <title>KSU Robosub</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-
+    <script src="js/index.js"></script>
 </head>
 
 <header>
@@ -20,35 +20,49 @@
         <a href="index.html">Sponsors</a>
         <a href="index.html">Contact</a>
 
-        <div class="search">
+        <div class="flex-spacer"></div>
 
+        <div class="search">
+            <label>
+                <input type="text" placeholder="Search">
+                <button class="search_button">
+                    <svg viewBox="0 0 50 50">
+                        <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/>
+                    </svg>
+                </button>
+            </label>
         </div>
     </nav>
+
+    <div id="vid_placer">
+        <h1 id="vid_text">A turtle treads through the sea</h1>
+        <div id="vid_wrapper">
+            <video id="ex_vid" src="media/ex_video.mp4" autoplay loop muted playsinline></video>
+        </div>
+    </div>
 </header>
 
 <body>
-    <main>
-        <h1>Explore the depths</h1>
-
+    <main id="home_main">
         <section class="row">
             <div class="spotlight_image">
-                <img id="spotlight_one" src="media/sub_ex.jpg" alt="sub example">
+                <img id="spotlight_one" src="../images/deathcat.jpg" alt="sub example">
             </div>
 
             <div class="spotlight_info">
-                <h2>AUV 2023</h2>
+                <h1>AUV 2023</h1>
                 <button>Explore More</button>
             </div>
         </section>
 
         <section class="row">
             <div class="spotlight_info">
-                <h2>AUV 2022</h2>
+                <h1>AUV 2022</h1>
                 <button>Explore More</button>
             </div>
 
             <div class="spotlight_image">
-                <img id="spotlight_two" src="media/sub_ex.jpg" alt="sub example">
+                <img id="spotlight_two" src="../images/emblem.svg" alt="sub example">
             </div>
         </section>
 
@@ -58,10 +72,17 @@
             </div>
 
             <div class="spotlight_info">
-                <h2>Meet our team</h2>
+                <h1>Meet our team</h1>
                 <button>Explore More</button>
             </div>
         </section>
+
+<!--        <span class="underwater_bubble" id="bubble_one"></span>-->
+<!--        <span class="underwater_bubble" id="bubble_two"></span>-->
+<!--        <span class="underwater_bubble" id="bubble_three"></span>-->
+<!--        <span class="underwater_bubble" id="bubble_four"></span>-->
+<!--        <span class="underwater_bubble" id="bubble_five"></span>-->
+<!--        <span class="underwater_bubble" id="bubble_six"></span>-->
     </main>
 </body>
 </html>
