@@ -5,9 +5,9 @@
 }
 
 .row {
-    width: 75%;
+    width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     border-radius: 2rem;
     transition: .4s;

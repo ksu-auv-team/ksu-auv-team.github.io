@@ -7,6 +7,9 @@
 - Sponsors
 - Contact
 
+## Design References
+- https://www.iutopi.com/
+
 ## Phone Accessible
 - PC: Top Navbar
 - Phone: Bottom navbar (only svgs)

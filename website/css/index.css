@@ -10,6 +10,44 @@ body {
 
 section {
     margin: 15rem;
+    background: var(--theme_visible);
+    padding: 2rem 5rem;
+}
+
+.section_separator {
+    position: relative;
+    width: 5rem;
+    aspect-ratio: 1;
+}
+
+.vertical {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--background_mono);
+    transition: .4s;
+}
+
+.horizontal {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--background_mono);
+    transition: .4s;
+}
+
+section:hover > .section_separator .vertical {
+    rotate: 45deg;
+}
+
+section:hover > .section_separator .horizontal {
+    rotate: -45deg;
 }
 
 main {
@@ -20,6 +58,10 @@ main {
     align-items: center;
     width: 100%;
 
+}
+
+.spotlight_info h1 {
+    color: var(--background_mono);
 }
 
 #spotlight_one, #spotlight_two, #spotlight_three {

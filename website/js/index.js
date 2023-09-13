@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         bubble.classList.add("underwater_bubble");
 
         // Random position within the container
-        const randomX = Math.random() * 90; // 0% to 100%
-        const randomY = Math.random() * 90; // 0% to 100%
+        const randomX = Math.random() * 95; // 0% to 100%
+        const randomY = Math.random() * 95; // 0% to 100%
         bubble.style.left = `${randomX}%`;
         bubble.style.top = `${randomY}%`;
 

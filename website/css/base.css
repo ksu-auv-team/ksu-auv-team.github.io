@@ -3,6 +3,7 @@
     --background_secondary: #F5B400;
     --background_mono: #2d2926;
     --theme: #ffc629;
+    --theme_visible: rgba(255, 198, 41, 0.85);
     --accent: #2962FF;
     --water_light: #aac7ff;
     --water_one: #4685ff;
@@ -77,6 +78,10 @@ nav a:hover::before, nav a:hover::after {
     width: 50%;
 }
 
+nav a.active::before, nav a.active::after {
+    width: 50%;
+}
+
 button {
     cursor: pointer;
     background: var(--background_mono);
@@ -88,7 +93,7 @@ button {
 }
 
 button:hover {
-    color: var(--theme);
+    color: var(--text_inverted);
 }
 
 input {
