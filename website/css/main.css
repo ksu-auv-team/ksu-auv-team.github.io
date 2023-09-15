@@ -1,5 +1,14 @@
 @import 'base.css';
 
+.hero {
+    position: relative;
+    aspect-ratio: 3/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .flex-spacer {
     flex-grow: 1;
 }
@@ -38,6 +47,11 @@
 
 .text_centered {
     text-align: center;
+}
+
+.underlined {
+    text-decoration: solid underline 2px var(--theme);
+    text-underline-offset: 4px;
 }
 
 #dialog_shroud {

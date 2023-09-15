@@ -31,6 +31,10 @@ header, body, footer {
     background: var(--background_mono);
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 h1, h2, button, h3, label {
     color: var(--theme);
 }

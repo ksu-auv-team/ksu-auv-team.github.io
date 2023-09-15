@@ -1,0 +1,9 @@
+@import "main.css";
+
+/*CSS page for index.html*/
+
+body {
+    position: relative;
+    background: var(--mono_back);
+    min-height: 100vh;
+}
