@@ -11,7 +11,7 @@ body {
 section {
     margin: 8rem;
     background: var(--theme_visible);
-    padding: 2rem 4rem 4rem 4rem;
+    padding: 2rem 4rem 2rem 4rem;
 }
 
 .section_separator {
