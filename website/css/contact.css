@@ -1,0 +1,22 @@
+@import "main.css";
+
+.row {
+    width: 50%;
+    height: 50vh;
+    margin-left: 25%;
+    gap: 5rem;
+}
+
+.row img {
+    height: 100%;
+}
+
+#first_text {
+    background: var(--theme_visible);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#first_text h2 {
+    color: var(--text);
+}

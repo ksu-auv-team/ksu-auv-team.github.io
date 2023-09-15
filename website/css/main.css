@@ -5,12 +5,22 @@
 }
 
 .row {
-    width: 50%;
+    width: 60%;
+    aspect-ratio: 4/1;
+    resize: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 2rem;
     transition: .4s;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .button_row {
@@ -24,6 +34,10 @@
 .radio_row {
     display: flex;
     align-items: center;
+}
+
+.text_centered {
+    text-align: center;
 }
 
 #dialog_shroud {
@@ -56,7 +70,26 @@
     animation: search_hover 300ms alternate 3;
 }
 
+.copy-text {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.copied-animation {
+    animation: copied 400ms ease;
+}
+
+/*.copy-text:hover {*/
+/*    animation: copied linear 400ms;*/
+/*}*/
+
 @keyframes search_hover {
     0% {rotate: 15deg}
     100% {rotate: 0}
+}
+
+@keyframes copied {
+    0% {background-color: var(--accent)}
+    100% {background-color: var(--mono_back)}
 }
