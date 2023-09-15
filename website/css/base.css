@@ -35,6 +35,10 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
 h1, h2, button, h3, label {
     color: var(--theme);
 }

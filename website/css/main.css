@@ -13,6 +13,10 @@
     flex-grow: 1;
 }
 
+.half_spacer {
+    flex-grow: .25;
+}
+
 .row {
     width: 60%;
     aspect-ratio: 4/1;
