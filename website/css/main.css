@@ -107,6 +107,10 @@ body {
     background: var(--background_secondary);
 }
 
+.colored_section > * {
+    color: var(--text);
+}
+
 /*.copy-text:hover {*/
 /*    animation: copied linear 400ms;*/
 /*}*/

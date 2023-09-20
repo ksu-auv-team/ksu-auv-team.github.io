@@ -18,6 +18,9 @@
 ## Short Notes
   
 - Hào: Seperate members by dept as well as position and add 2023 to site
-- Contact Dante for access to google drive photos
+- ~~Contact Dante for access to google drive photos~~
 - Create Footer
 - Change search input to a dialog
+- Team Page
+  - On years, mouse will scroll horizontally on hover
+  - Allow users to filter by position, year, major

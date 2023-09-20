@@ -3,7 +3,7 @@
 section {
     position: relative;
     /*background: grey;*/
-    aspect-ratio: 4/1;
+    /*aspect-ratio: 4/1;*/
     overflow: initial;
     display: flex;
     justify-content: center;
@@ -32,4 +32,37 @@ section {
 .hero p { /*temporary*/
     color: white;
     text-align: center;
+}
+
+.members {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+.member_wrapper {
+    width: 15%;
+    aspect-ratio: 2/1;
+    margin-bottom: 3rem;
+}
+
+.member_photo {
+    width: 100%;
+}
+
+.member_text {
+    padding: 0;
+    margin: 0;
+    color: var(--text_inverted);
+}
+
+.member_text_colored {
+    padding: 0;
+    margin: 0;
+}
+
+.member_name_colored, .member_text_colored {
+    color: var(--text)
 }
