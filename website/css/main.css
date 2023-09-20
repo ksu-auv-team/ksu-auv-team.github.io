@@ -1,5 +1,10 @@
 @import 'base.css';
 
+
+body {
+    background: var(--mono_back);
+}
+
 .hero {
     position: relative;
     aspect-ratio: 3/1;

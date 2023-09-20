@@ -1,0 +1,24 @@
+@import "main.css";
+
+.hero {
+    background: rgb(10,10,10); /* Temporary */
+    display: flex;
+    z-index: -1;
+
+    background: url("../media/team_with_toolbox.jpg");
+    background-size: cover;
+    background-position: 0 40%;
+}
+
+.hero div {
+    width: 75%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(10,10,10,.8);
+}
+
+.hero p { /*temporary*/
+    color: white;
+    text-align: center;
+}

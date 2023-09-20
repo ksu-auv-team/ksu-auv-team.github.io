@@ -2,12 +2,6 @@
 
 /*CSS page for index.html*/
 
-body {
-    position: relative;
-    background: var(--mono_back);
-    min-height: 100vh;
-}
-
 section {
     position: relative;
     /*background: grey;*/
@@ -26,19 +20,29 @@ section {
 .hero {
     background: rgb(10,10,10); /* Temporary */
     display: flex;
+    z-index: -1;
+
+    background: url("../media/pool_testing.jpg");
+    background-size: cover;
+    background-position: 0 50%;
+}
+
+.hero div {
+    width: 75%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    background: rgba(10,10,10,.8);
 }
 
 .hero p { /*temporary*/
     color: white;
+    text-align: center;
 }
 
 .upper_offset_row {
     position: absolute;
-    top: -20%;
+    top: -35%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -94,17 +98,20 @@ section {
     align-self: center;
 }
 
-#representation {
-    flex-direction: row;
-    gap: 5rem;
+#robosub {
+    width: 50%;
+    display: flex;
+    gap: 2rem;
 }
 
-.about_vid_container {
-    width: 25%;
-    aspect-ratio: 3/2;
-    background: grey;
+.content_text {
+    width: 50%;
 }
 
-.about_text > * {
+.content_text > * {
     color: var(--text);
+}
+
+#robosub_image {
+    width: 50%;
 }
