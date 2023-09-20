@@ -13,10 +13,6 @@ section {
     flex-direction: column;
 }
 
-.colored_section {
-    background: var(--background_secondary);
-}
-
 .hero {
     background: rgb(10,10,10); /* Temporary */
     display: flex;

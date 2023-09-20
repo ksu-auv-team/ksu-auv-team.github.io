@@ -1,4 +1,7 @@
 :root {
+    overflow-x: hidden;
+    font-family: Tahoma, serif;
+
     --background_main: #ffffff;
     --background_secondary: #F5B400;
     --background_mono: #6B6B6C;

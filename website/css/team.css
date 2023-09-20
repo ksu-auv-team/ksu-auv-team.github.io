@@ -1,5 +1,16 @@
 @import "main.css";
 
+section {
+    position: relative;
+    /*background: grey;*/
+    aspect-ratio: 4/1;
+    overflow: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .hero {
     background: rgb(10,10,10); /* Temporary */
     display: flex;

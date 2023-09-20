@@ -103,6 +103,10 @@ body {
     animation: copied 400ms ease;
 }
 
+.colored_section {
+    background: var(--background_secondary);
+}
+
 /*.copy-text:hover {*/
 /*    animation: copied linear 400ms;*/
 /*}*/
