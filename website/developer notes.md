@@ -21,6 +21,12 @@
 - ~~Contact Dante for access to google drive photos~~
 - Create Footer
 - Change search input to a dialog
+- About Page
+  - List group location
+    - Kennesaw State University - Marietta Campus
+      Student Competition Team Building - Room O-106
+      659 Arntson Drive
+      Marietta, GA 30060
 - Team Page
   - On years, mouse will scroll horizontally on hover
   - Allow users to filter by position, year, major
