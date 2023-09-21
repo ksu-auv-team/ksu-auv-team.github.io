@@ -1,0 +1,43 @@
+@import "main.css";
+
+.hero {
+    background: url("../media/sponsors.jpg") 50%;
+    background-size: cover;
+}
+
+#sponsors_main {
+    position: relative;
+    overflow: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#thank_you {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+#thank_you_message {
+    color: var(--text_inverted);
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#thank_you_message > * {
+    color: var(--text_inverted);
+}
+
+#thank_you img {
+    width: 30%;
+}
+
+#sponsor_list > * {
+    color: var(--text_inverted);
+}

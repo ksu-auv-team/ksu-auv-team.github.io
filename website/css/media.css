@@ -1,0 +1,92 @@
+@import "main.css";
+
+#media_main {
+    position: relative;
+    overflow: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#media_main > div {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.hero {
+    background: rgb(10,10,10); /* Temporary */
+    display: flex;
+    z-index: -1;
+
+    background: url("../media/club_room_people.jpg");
+    background-size: cover;
+    background-position: 0 70%;
+}
+
+.hero div {
+    width: 75%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(10,10,10,.8);
+}
+
+.media_container {
+    width: 22%;
+    position: relative;
+    aspect-ratio: 7/5;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    transition: 400ms;
+    overflow: hidden;
+}
+
+.media_container::before {
+    color: var(--text_inverted);
+    padding: .5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "";
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    background: linear-gradient(transparent, 5%, var(--text));
+    opacity: .8;
+    transition: 400ms;
+    transition-delay: 200ms;
+}
+
+.media_container:hover {
+    scale: 1.02;
+}
+
+.media_container:hover::before {
+    bottom: 0;
+}
+
+.media_container > * {
+    margin: 0;
+}
+
+.media_container img {
+    width: 100%;
+}
+
+
+
+/* Begin media text */
+
+#filler_media::before {
+    content: "Hanging in the club room";
+}
+
+#filler_media1::before, #filler_media2::before, #filler_media3::before, #filler_media4::before, #filler_media5::before {
+    content: "Filler Text";
+}

@@ -35,14 +35,23 @@ header, body, footer {
     background: var(--background_mono);
 }
 
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /*border-bottom: solid 2px var(--text_inverted)*/
+}
+
 
 footer {
     background: url("../media/ksu_background.jpg");
     height: fit-content;
     display: flex;
-    padding: 1rem;
-    justify-content: space-around;
+    padding: 0 3rem;
+    justify-content: space-between;
     align-items: center;
+    border-top: solid 2px var(--text_inverted);
 }
 footer h2 {
     margin: 0;
@@ -147,6 +156,10 @@ code {
     padding: .5rem;
     color: var(--text_inverted);
     border-radius: .5rem;
+}
+
+img {
+    border-radius: 1rem;
 }
 
 ::-webkit-scrollbar {
