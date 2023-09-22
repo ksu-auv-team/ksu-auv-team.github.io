@@ -3,7 +3,7 @@
 ## Pages
 - Home
 - About
-- Team / Memebers
+- Team / Members
 - Sponsors
 - Contact
 
@@ -17,9 +17,9 @@
 
 ## Short Notes
   
-- Hào: Seperate members by dept as well as position and add 2023 to site
+- ~~Hào: Seperate members by dept as well as position and add 2023 to site~~
 - ~~Contact Dante for access to google drive photos~~
-- Fix footer size
+- ~~Fix footer size~~
 - Change search input to a dialog
 - About Page
   - List group location

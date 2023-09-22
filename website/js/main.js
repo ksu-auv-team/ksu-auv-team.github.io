@@ -9,3 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+function openDialog() {
+    document.getElementById('dialog').style.display = 'initial';
+}
+
+function closeDialog() {
+    document.getElementById('dialog').style.display = 'none';
+}

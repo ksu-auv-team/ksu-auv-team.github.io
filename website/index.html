@@ -25,9 +25,14 @@
 
         <div class="flex-spacer"></div>
 
-        <button class="search">Search</button>
+        <button class="search" onclick="openDialog()">Search</button>
     </nav>
 </header>
+
+<div class="dialog" id="dialog">
+    <span class="dialog_shroud" onclick="closeDialog()"></span>
+    <iframe class="search_dialog" src="search.html"></iframe>
+</div>
 
 <body>
 
